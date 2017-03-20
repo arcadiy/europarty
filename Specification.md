@@ -69,6 +69,7 @@ Because they must manage the party in the system, the party host needs to regist
 - Verify their email address
 - Do other administrative tasks
   - Change their password
+  - Change their name
   - Delete their account
 
 Once the party host has an account and is signed in, the host may:
@@ -91,6 +92,9 @@ A party attendee may:
 
 ## Details
 The EuroParty site will support a number of flows in order to achieve the operations and capabilities described above.
+
+### Mockups
+https://precursorapp.com/document/Europarty-0-1-17592205566419
 
 ### Event management
 These tasks are performed by site administrators and may or may not have a friendly interface. As a starting point these operations may be performed using scaffolding or direct database operations.
@@ -152,7 +156,6 @@ The page consists of the following sections:
 - Parties I've voted in: a list of other user's parties this host has participated in as an attendee. Useful for viewing the results from those parties.
 - Account actions: Links to sign out and change password.
 
-*//TODO: Mockup of the user main page*
 
 ### Party
 The party pages allow a host or attendee to interact with a specific party (including creating a new one). Only the voting and viewing results pages can be accessed by party attendees; all other pages may only be accessed by the party host.
@@ -171,8 +174,6 @@ If the user cancels the party creation they will be returned to their user main 
 If the user completes the party creation, they will be taken to the party management page and shown a confirmation message.
 
 **TEXT** (party created): "Your party is ready!"
-
-*//TODO: Mockup of the party creation page*
 
 ##### Voting methods
 Eurovision voting in real life is a complicated process that produces multiple scores from each country and then tallies the results. For the purposes of an at-home party, we want to have a simpler approach (or a variety of approaches).
@@ -199,8 +200,6 @@ It should also have entry points to:
 - Back to the user main page
 
 When a user changes a setting, they should have the ability to click an "Update" button that will save their changes and then reload the party management page.
-
-*//TODO: Mockup of the party management page*
 
 #### Voting
 
@@ -230,8 +229,6 @@ If the party host has allowed guests to view results, then after clicking submit
 
 **FUTURE**: Validation to ensure one vote per user. Ability to sign up to get results when they're ready.
 
-*//TODO: Mockup of the party voting page*
-
 #### Viewing results
 
 The results page for a given party may be displayed only to the host or to the host and any attendees with the URL (and, optionally, the aforementioned passphrase) depending on the host's preferences.
@@ -244,8 +241,6 @@ The results page should display:
 - The full list of participants in the event, in the order of their point total, and their number of points
 - The full list of votes recorded for the party
 
-*//TODO: Mockup of the party results page*
-
 #### Deleting a party
 The party host should be able to delete a party if they no longer want it.
 
@@ -253,9 +248,9 @@ They access the delete party page from the party management page.
 
 On this page, they must confirm they wish to delete the party and informed that the action is irreversible.
 
-**TEXT** (deletion confirmation): Once you delete a party it's gone forever. Are you sure this party's over 
+**TEXT** (deletion confirmation): Once you delete a party it's gone forever. Are you sure this party's over?
 
-*//TODO: Mockup of the party delete page*
+If they confirm deletion, they will be taken to their user main page. If they click cancel they will be returned to the party management page.
 
 ### Home page
 //TODO
